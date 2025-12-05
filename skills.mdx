@@ -1,0 +1,152 @@
+---
+title: Skills
+description: Overview of technical skills and proficiency levels in web development
+---
+
+## Skills Overview
+
+The skills section presents your technical abilities in web development, organized by proficiency levels and categories. This helps potential employers quickly assess your expertise and match you with suitable opportunities.
+
+<Tabs>
+  <Tab title="Frontend Skills" icon="monitor">
+    Expertise in user interface development and client-side technologies.
+
+    <ExpandableGroup>
+      <Expandable title="Core Technologies" default-open="true">
+        HTML5, CSS3, JavaScript (ES6+), responsive design principles.
+      </Expandable>
+      <Expandable title="Frameworks & Libraries" default-open="false">
+        React, Vue.js, Angular, jQuery, Bootstrap, Tailwind CSS.
+      </Expandable>
+      <Expandable title="Tools" default-open="false">
+        Webpack, Babel, ESLint, Prettier, browser dev tools.
+      </Expandable>
+    </ExpandableGroup>
+  </Tab>
+  <Tab title="Backend Skills" icon="server">
+    Server-side development and API creation capabilities.
+
+    <Expandable title="Languages" default-open="true">
+      Node.js, Python, PHP, Ruby, Java.
+    </Expandable>
+
+    <Expandable title="Frameworks" default-open="false">
+      Express.js, Django, Laravel, Ruby on Rails, Spring Boot.
+    </Expandable>
+  </Tab>
+  <Tab title="Database Skills" icon="database">
+    Data storage and management expertise.
+
+    <Callout kind="info">Database skills are crucial for full-stack development and data-driven applications.</Callout>
+  </Tab>
+</Tabs>
+
+## Proficiency Levels
+
+Skills are rated on a proficiency scale to provide clear expectations about your experience level.
+
+<Columns cols={3}>
+  <Card title="Beginner" icon="circle" href="#">
+    Basic understanding and ability to work with the technology under guidance.
+  </Card>
+  <Card title="Intermediate" icon="triangle" href="#">
+    Solid working knowledge and ability to implement features independently.
+  </Card>
+  <Card title="Advanced" icon="square" href="#">
+    Deep expertise and ability to architect complex solutions.
+  </Card>
+</Columns>
+
+## Adding Skills
+
+<Steps>
+  <Step title="Select Category" icon="folder">
+    Choose the appropriate skill category from the dropdown menu.
+  </Step>
+  <Step title="Enter Skill Name" icon="edit">
+    Type the specific technology or tool name.
+  </Step>
+  <Step title="Set Proficiency" icon="sliders">
+    Rate your skill level using the proficiency scale.
+  </Step>
+  <Step title="Add Description" icon="file-text">
+    Provide context about how you've used this skill.
+  </Step>
+  <Step title="Save" icon="check">
+    Confirm and save your skill entry.
+  </Step>
+</Steps>
+
+## Skill Validation
+
+<Expandable title="Verification Methods" default-open="false">
+  Skills can be verified through project references, certifications, or code samples. Some employers may request proof of proficiency.
+</Expandable>
+
+<Callout kind="tip">Include specific examples of how you've applied each skill in real projects.</Callout>
+
+## Emerging Technologies
+
+Showcase your knowledge of current and emerging web technologies to demonstrate forward-thinking approach.
+
+<CodeGroup tabs="React,Vue">
+  ```javascript
+// React Hooks example
+const useSkillsData = () => {
+  const [skills, setSkills] = useState([]);
+  
+  useEffect(() => {
+    fetch('/api/skills')
+      .then(res => res.json())
+      .then(setSkills);
+  }, []);
+  
+  return { skills, loading };
+};
+```
+  ```javascript
+// Vue Composition API example
+import { ref, onMounted } from 'vue';
+
+export default {
+  setup() {
+    const skills = ref([]);
+    
+    onMounted(async () => {
+      const response = await fetch('/api/skills');
+      skills.value = await response.json();
+    });
+    
+    return { skills };
+  }
+}
+```
+</CodeGroup>
+
+## Soft Skills
+
+Technical skills are important, but soft skills also play a crucial role in development work.
+
+| Skill Category | Examples | Importance |
+|----------------|----------|------------|
+| Communication | Team collaboration, client interaction | High |
+| Problem Solving | Debugging, optimization | Critical |
+| Learning | Adaptability, self-study | Essential |
+| Time Management | Project deadlines, prioritization | Important |
+
+<Callout kind="success">Combine technical expertise with strong soft skills for well-rounded developer profiles.</Callout>
+
+## Continuous Learning
+
+Demonstrate commitment to staying current with web development trends and technologies.
+
+<ExpandableGroup>
+  <Expandable title="Learning Resources" default-open="true">
+    Online courses, conferences, workshops, and community involvement.
+  </Expandable>
+  <Expandable title="Certifications" default-open="false">
+    Professional certifications and recognized qualifications.
+  </Expandable>
+</ExpandableGroup>
+
+This comprehensive skills presentation helps potential employers understand your full capabilities and growth potential in web development.

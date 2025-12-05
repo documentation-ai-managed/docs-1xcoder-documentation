@@ -1,0 +1,132 @@
+---
+title: Projects
+description: Showcase of web development projects with detailed descriptions and technologies
+---
+
+## Project Gallery
+
+The projects section displays your web development work in an organized gallery format. Each project includes detailed descriptions, technology stacks, and links to live demos or repositories. This helps potential employers and clients understand your coding style and problem-solving abilities.
+
+<Tabs>
+  <Tab title="Featured Projects" icon="star">
+    Highlight your best work with featured project status. These appear prominently on your portfolio homepage.
+
+    <Callout kind="tip">Feature 3-5 of your strongest projects to capture attention immediately.</Callout>
+
+    <Expandable title="Featured Criteria" default-open="false">
+      Projects are featured based on complexity, innovation, and real-world impact. Choose ones that best represent your skills.
+    </Expandable>
+  </Tab>
+  <Tab title="Recent Work" icon="clock">
+    Show your latest projects to demonstrate current skills and technologies you're working with.
+
+    <ExpandableGroup>
+      <Expandable title="Project Categories" default-open="true">
+        Organize projects by type: web applications, mobile apps, APIs, or open-source contributions.
+      </Expandable>
+      <Expandable title="Technology Filters" default-open="false">
+        Visitors can filter projects by technology stack, making it easy to find relevant work.
+      </Expandable>
+    </ExpandableGroup>
+  </Tab>
+  <Tab title="All Projects" icon="grid">
+    View the complete collection of your development work in a grid layout.
+  </Tab>
+</Tabs>
+
+## Project Details
+
+Each project entry provides comprehensive information to help viewers understand your development process and capabilities.
+
+<Columns cols={2}>
+  <Card title="Technical Specs" icon="cpu" href="#">
+    List all technologies, frameworks, and tools used in the project.
+  </Card>
+  <Card title="Live Demo" icon="eye" href="#">
+    Provide links to live websites or deployed applications.
+  </Card>
+  <Card title="Source Code" icon="code" href="#">
+    Link to GitHub repositories or code samples.
+  </Card>
+  <Card title="Project Story" icon="book-open" href="#">
+    Explain the project background, challenges, and solutions.
+  </Card>
+</Columns>
+
+## Adding Projects
+
+<Steps>
+  <Step title="Project Form" icon="file-text">
+    Fill out the project creation form with basic information.
+  </Step>
+  <Step title="Upload Assets" icon="image">
+    Add screenshots, diagrams, and project images.
+  </Step>
+  <Step title="Technology Tags" icon="tag">
+    Select relevant technologies and add custom tags.
+  </Step>
+  <Step title="Write Description" icon="edit">
+    Provide detailed project description and key features.
+  </Step>
+  <Step title="Set Visibility" icon="eye-off">
+    Choose public or private visibility for the project.
+  </Step>
+</Steps>
+
+## Best Practices
+
+<Callout kind="info">Write clear, concise project descriptions that highlight your problem-solving approach and technical decisions.</Callout>
+
+Use high-quality screenshots and consider including architecture diagrams for complex projects. Always include links to live demos when possible, as this provides immediate proof of your work.
+
+<Expandable title="SEO Optimization" default-open="false">
+  Project descriptions and technology tags help with search engine optimization, making your portfolio more discoverable to potential clients.
+</Expandable>
+
+## Project Analytics
+
+Track how many people view your projects and which ones attract the most attention. This data helps you understand what types of work resonate with your audience.
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+// Example: Fetching project data
+const getProjects = async () => {
+  const response = await fetch('/api/projects');
+  const projects = await response.json();
+  return projects.map(project => ({
+    title: project.title,
+    technologies: project.technologies,
+    description: project.description
+  }));
+};
+```
+  ```python
+def get_project_details(project_id):
+    project = Project.query.get(project_id)
+    return {
+        'title': project.title,
+        'technologies': project.technologies,
+        'description': project.description,
+        'github_url': project.github_url
+    }
+```
+</CodeGroup>
+
+## Collaboration Features
+
+Some projects may involve team collaboration. Highlight your role and contributions clearly, especially if you worked on larger development teams.
+
+<Callout kind="alert">Always obtain permission before showcasing work done for previous employers or clients.</Callout>
+
+## Project Categories
+
+Organize your work into logical categories to help visitors navigate your portfolio efficiently.
+
+| Category | Description | Example Technologies |
+|----------|-------------|----------------------|
+| Web Apps | Full-stack web applications | React, Node.js, MongoDB |
+| Mobile Apps | Responsive mobile applications | React Native, Flutter |
+| APIs | Backend services and integrations | Express.js, GraphQL |
+| Open Source | Community contributions | Various, project-specific |
+
+This categorization makes it easier for potential employers to find projects relevant to their needs.

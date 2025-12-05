@@ -1,0 +1,113 @@
+---
+title: Introduction
+description: Overview of 1xcoder and its core capabilities
+---
+
+## Getting Started
+
+1xcoder is a developer portfolio platform that showcases web development projects, skills, and professional experience. It provides a comprehensive overview of a developer's work and capabilities in web development. The platform helps developers present their portfolios effectively to potential employers and clients.
+
+<Columns cols={3}>
+  <Card title="Projects" icon="code" href="projects">
+    Explore showcased web development projects with detailed descriptions and technologies used.
+  </Card>
+  <Card title="Skills" icon="zap" href="skills">
+    View the developer's technical skills and proficiency levels across various web development areas.
+  </Card>
+  <Card title="Experience" icon="briefcase" href="experience">
+    Learn about professional experience and career milestones in web development.
+  </Card>
+</Columns>
+
+## Key Features
+
+<Tabs>
+  <Tab title="Project Showcase" icon="folder">
+    Display your web development projects with rich descriptions, technology stacks, and live links. Each project includes detailed explanations of challenges overcome and solutions implemented.
+
+    <Callout kind="tip">Use the project gallery to highlight your best work and demonstrate your development expertise.</Callout>
+
+    <Steps>
+      <Step title="Add Project" icon="plus">
+        Click the add project button to start showcasing your work.
+      </Step>
+      <Step title="Upload Details" icon="upload">
+        Provide project title, description, technologies, and images.
+      </Step>
+      <Step title="Publish" icon="send">
+        Make your project visible to potential clients and employers.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Skills Assessment" icon="award">
+    Track and display your proficiency in various web technologies, from frontend frameworks to backend databases. The platform categorizes skills for easy navigation.
+
+    <Expandable title="Skill Categories" default-open="false">
+      Skills are organized into categories like frontend, backend, databases, and tools. This helps visitors quickly understand your expertise areas.
+    </Expandable>
+
+    <ExpandableGroup>
+      <Expandable title="Frontend Skills" default-open="true">
+        HTML, CSS, JavaScript, React, Vue.js, and responsive design techniques.
+      </Expandable>
+      <Expandable title="Backend Skills" default-open="false">
+        Node.js, Python, PHP, REST APIs, and database management.
+      </Expandable>
+    </ExpandableGroup>
+  </Tab>
+  <Tab title="Experience Timeline" icon="calendar">
+    Present your professional journey with a chronological timeline of roles, achievements, and key projects. Include company details and duration of employment.
+
+    <Callout kind="info">The experience section builds credibility by showing your career progression and industry experience.</Callout>
+  </Tab>
+</Tabs>
+
+## Why Choose 1xcoder?
+
+<CodeGroup tabs="React,Node.js">
+  ```javascript
+function createPortfolio(userData) {
+  const portfolio = new Portfolio(userData);
+  portfolio.addProjects(userData.projects);
+  portfolio.addSkills(userData.skills);
+  portfolio.addExperience(userData.experience);
+  return portfolio.render();
+}
+```
+  ```javascript
+const express = require('express');
+const app = express();
+
+app.get('/api/portfolio', (req, res) => {
+  res.json({
+    projects: portfolioData.projects,
+    skills: portfolioData.skills,
+    experience: portfolioData.experience
+  });
+});
+```
+</CodeGroup>
+
+The platform offers a modern, responsive design that works seamlessly across all devices. It includes built-in analytics to track portfolio views and engagement. Additionally, 1xcoder provides customization options to match your personal brand.
+
+<Callout kind="success">Start building your professional developer portfolio today and showcase your web development expertise effectively.</Callout>
+
+## Quick Setup
+
+<Steps>
+  <Step title="Sign Up" icon="user">
+    Create your account with basic information and profile details.
+  </Step>
+  <Step title="Configure Profile" icon="settings">
+    Set up your personal information, bio, and contact details.
+  </Step>
+  <Step title="Add Content" icon="edit">
+    Upload projects, list skills, and detail your experience.
+  </Step>
+  <Step title="Customize" icon="palette">
+    Choose themes and layouts that reflect your style.
+  </Step>
+  <Step title="Publish" icon="rocket">
+    Make your portfolio live and share it with the world.
+  </Step>
+</Steps>

@@ -1,0 +1,84 @@
+{
+  "name": "1xcoder Documentation",
+  "initialRoute": "introduction",
+  "colors": {
+    "light": {
+      "brand": "#80807d",
+      "heading": "#1a1a1a",
+      "text": "#374151"
+    },
+    "dark": {
+      "brand": "#a0a0a0",
+      "heading": "#f2f2f2",
+      "text": "#c1c1c1"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "star"
+              }
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "icon": "lightbulb",
+            "pages": [
+              {
+                "title": "Projects",
+                "path": "projects",
+                "icon": "code"
+              },
+              {
+                "title": "Skills",
+                "path": "skills",
+                "icon": "zap"
+              },
+              {
+                "title": "Experience",
+                "path": "experience",
+                "icon": "briefcase"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "code",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "icon": "terminal",
+            "openapi": "openapi.yaml"
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          {
+            "title": "Release History",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "robots:index": true,
+    "robots:follow": true
+  }
+}

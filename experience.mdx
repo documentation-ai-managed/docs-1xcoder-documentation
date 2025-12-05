@@ -1,0 +1,155 @@
+---
+title: Experience
+description: Professional experience and career milestones in web development
+---
+
+## Career Timeline
+
+The experience section chronicles your professional journey in web development, highlighting key roles, achievements, and career progression. This timeline helps potential employers understand your background and growth trajectory.
+
+<Tabs>
+  <Tab title="Professional Roles" icon="briefcase">
+    Detailed information about each position you've held in web development.
+
+    <Expandable title="Role Details" default-open="true">
+      Include job title, company name, employment dates, and primary responsibilities.
+    </Expandable>
+  </Tab>
+  <Tab title="Key Achievements" icon="award">
+    Highlight significant accomplishments and contributions in each role.
+
+    <ExpandableGroup>
+      <Expandable title="Project Impact" default-open="true">
+        Describe how your work affected company goals or user experience.
+      </Expandable>
+      <Expandable title="Technical Contributions" default-open="false">
+        Detail technical improvements, optimizations, or innovations you implemented.
+      </Expandable>
+    </ExpandableGroup>
+  </Tab>
+  <Tab title="Career Progression" icon="trending-up">
+    Show your advancement and increasing responsibilities over time.
+  </Tab>
+</Tabs>
+
+## Adding Experience
+
+<Steps>
+  <Step title="Enter Position" icon="user">
+    Input job title, company name, and employment period.
+  </Step>
+  <Step title="Describe Responsibilities" icon="list">
+    List your main duties and day-to-day activities.
+  </Step>
+  <Step title="Highlight Achievements" icon="trophy">
+    Detail specific accomplishments and measurable results.
+  </Step>
+  <Step title="Add Technologies" icon="cpu">
+    Specify the technologies and tools you used in the role.
+  </Step>
+  <Step title="Include Context" icon="info">
+    Provide background about the company and your team.
+  </Step>
+</Steps>
+
+## Experience Categories
+
+<Columns cols={2}>
+  <Card title="Full-time Roles" icon="building" href="#">
+    Permanent positions with established companies.
+  </Card>
+  <Card title="Freelance Projects" icon="user" href="#">
+    Independent work and contract assignments.
+  </Card>
+  <Card title="Internships" icon="graduation-cap" href="#">
+    Entry-level positions and training programs.
+  </Card>
+  <Card title="Open Source" icon="github" href="#">
+    Community contributions and volunteer work.
+  </Card>
+</Columns>
+
+## Professional Development
+
+<Expandable title="Skill Growth" default-open="false">
+  Describe how each role contributed to your technical and professional development.
+</Expandable>
+
+<Callout kind="info">Show progression from junior to senior roles, demonstrating increasing complexity and responsibility.</Callout>
+
+## Industry Experience
+
+Highlight experience across different industries to show adaptability and broad knowledge.
+
+<CodeGroup tabs="Node.js,Django">
+  ```javascript
+// Example: Experience data structure
+const experienceData = [
+  {
+    title: 'Senior Web Developer',
+    company: 'TechCorp',
+    duration: '2020-Present',
+    responsibilities: [
+      'Led frontend development team',
+      'Implemented React-based architecture',
+      'Mentored junior developers'
+    ],
+    technologies: ['React', 'Node.js', 'MongoDB']
+  },
+  {
+    title: 'Web Developer',
+    company: 'StartupXYZ',
+    duration: '2018-2020',
+    responsibilities: [
+      'Built responsive web applications',
+      'Integrated third-party APIs',
+      'Optimized application performance'
+    ],
+    technologies: ['Vue.js', 'Python', 'PostgreSQL']
+  }
+];
+```
+  ```python
+# Django model for experience class Experience(models.Model):
+    title = models.CharField(max_length=200)
+    company = models.CharField(max_length=200)
+    start_date = models.DateField()
+    end_date = models.DateField(null=True, blank=True)
+    description = models.TextField()
+    technologies = models.JSONField()
+    
+    def __str__(self):
+        return f"{self.title} at {self.company}"
+```
+</CodeGroup>
+
+## Leadership and Mentoring
+
+<ExpandableGroup>
+  <Expandable title="Team Leadership" default-open="true">
+    Experience leading development teams, managing projects, and coordinating with stakeholders.
+  </Expandable>
+  <Expandable title="Mentorship" default-open="false">
+    Guiding junior developers, conducting code reviews, and knowledge sharing.
+  </Expandable>
+</ExpandableGroup>
+
+<Callout kind="success">Leadership experience demonstrates your ability to contribute beyond individual coding tasks.</Callout>
+
+## Industry Certifications
+
+| Certification | Issuing Organization | Year |
+|---------------|----------------------|------|
+| AWS Certified Developer | Amazon Web Services | 2022 |
+| Google Cloud Professional | Google Cloud | 2021 |
+| React Developer Certification | Meta | 2020 |
+
+Certifications validate your skills and show commitment to professional development.
+
+## Career Goals
+
+<Expandable title="Future Aspirations" default-open="false">
+  Share your professional goals and areas of interest for potential career opportunities.
+</Expandable>
+
+This comprehensive experience presentation provides a clear picture of your professional background and capabilities in web development.
